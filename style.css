@@ -1,0 +1,108 @@
+html {
+  font-size: 100%;
+}
+
+.section {
+  background: darkcyan;
+  color: white;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+header,
+.c1,
+.c2 {
+  margin-bottom: 1.2rem;
+}
+
+.content {
+  float: left;
+  width: 100%;
+  display: inline-block;
+}
+
+.content .box {
+  background: #406d6e;
+  height: 200px;
+  float: left;
+  margin: 0.5rem;
+  width: calc(100% - 1rem);
+}
+
+@media (min-width: 48rem) {
+  .content {
+    margin-left: 0.2rem;
+    width: calc(66.66% - 0.2rem);
+  }
+  .content .box {
+    margin: 0.5rem;
+    width: calc(33.33% - 1rem);
+  }
+}
+
+.sidebar {
+  float: left;
+  width: 100%;
+}
+.sidebar .box {
+  background: #406d6e;
+  height: 200px;
+  float: right;
+  margin: 0.5rem;
+  width: calc(100% - 1rem);
+}
+@media (min-width: 48rem) {
+  .sidebar {
+    float: left;
+    width: 33.33%;
+  }
+  .sidebar .box {
+    background: #406d6e;
+    height: 200px;
+    float: right;
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+  }
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.about {
+  float: left;
+  width: 100%;
+}
+
+.contact {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 48rem) {
+  .about {
+    margin-right: 0.2rem;
+    width: calc(33.33% - 0.2rem);
+  }
+  .contact {
+    width: 66.66%;
+  }
+}
+
+@media (min-width: 38rem) {
+  body {
+    background-color: yellowgreen;
+  }
+}
+
+@media (min-width: 48rem) {
+  body {
+    background-color: red;
+  }
+}
